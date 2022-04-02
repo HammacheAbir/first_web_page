@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML course</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#lessons">Lessons</a>
+      <a href="#register">Register</a>
+      <a href="https://codelabsacademy.com/" target="_self"> CLA</a>
+      <a href="https://codelabsacademy.com/workshops" target="_blank">
+        Workshops</a
+      >
+    </nav>
+    <hr />
+    <header>
+      <h1>HTML Course</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Course description</h2>
+        <img src="images/html.png" alt="html logo" width="300" />
+        <p>
+          <strong>HTML</strong> is Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Impedit exercitationem voluptatibus repudiandae
+          expedita deserunt ipsum eligendi id cum totam, nisi ducimus ut quo
+          amet minima dicta suscipit nostrum facilis voluptas!
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2 id="lessons">Course lessons</h2>
+        <ol type="1">
+          <li>Fundamentals</li>
+          <li>
+            Lists
+            <ul type="disc">
+              <li>Ordered Lists</li>
+              <li>Unorederd Lists</li>
+            </ul>
+          </li>
+          <li>Images</li>
+          <li>Links</li>
+          <li>Tables</li>
+          <li>Forms</li>
+          <li>Semantic Elements</li>
+        </ol>
+      </section>
+      <hr />
+      <section>
+        <h2>Course schedule</h2>
+        <table border="1" cellpadding="10" cellspacing="5">
+          <caption>
+            This is the schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>Lesson</th>
+              <th>Items</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">Fundamentals</td>
+              <td>15 mins</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Lists</td>
+              <td>Unordered lists</td>
+              <td rowspan="2">20 mins</td>
+            </tr>
+            <tr>
+              <td>Ordered lists</td>
+            </tr>
+            <tr>
+              <td colspan="2">Images</td>
+              <td>10 mins</td>
+            </tr>
+            <tr>
+              <td colspan="2">Links</td>
+              <td>15 mins</td>
+            </tr>
+            <tr>
+              <td colspan="2">Tables</td>
+              <td>15 mins</td>
+            </tr>
+            <tr>
+              <td colspan="2">Forms</td>
+              <td>20 mins</td>
+            </tr>
+            <tr>
+              <td colspan="2">Semantic elements</td>
+              <td>20 mins</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+
+      <section>
+        <h2>Course overview</h2>
+        <video width="500" controls>
+          <source src="videos/cartoon.mp4" type="video/mp4" />
+          unfound video or browser doesnt support the format of the video
+        </video>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/1PnVor36_40"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <hr />
+
+      <section>
+        <h2 id="register">Course registrations</h2>
+
+        <fieldset>
+          <legend>Informations</legend>
+          <div>
+            <label for="fullname">Full Name</label>
+            <input
+              placeholder="full name"
+              type="text"
+              name="fullName"
+              id="fullname"
+            />
+
+            <label for="email">Email</label>
+            <input
+              placeholder="name@gmail.com"
+              type="email"
+              name="email"
+              id="email"
+            />
+          </div>
+
+          <div>
+            <label for="birth"> Birthday</label>
+            <input type="date" name="birth" id="birth" />
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="algeria">Algeria</option>
+              <option value="tunisia">Tunisia</option>
+              <option value="marocco">Marocco</option>
+            </select>
+          </div>
+
+          <div>
+            <input type="radio" name="sex" id="man" />
+            <label for="man">Man</label>
+            <input type="radio" name="sex" id="woman" />
+            <label for="woman">Woman</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="availability" id="availability" />
+            <label for="availability">I will be available</label>
+
+            <input type="range" name="hours" id="hours" />
+            <label for="hours">Hours</label>
+          </div>
+
+          <label for="bio">Bio</label>
+          <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+          <label for="cover">Cover letter</label>
+          <input type="file" name="cover" id="cover" />
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
+        </fieldset>
+      </section>
+
+      <hr />
+      <section>
+        <h2>Related courses</h2>
+        <a href="css.html">
+          <img src="images/css.png" alt="css logo" width="100" />
+        </a>
+        <a href="javascript.html">
+          <img src="images/javascript.png" alt="javascript logo" width="110" />
+        </a>
+        <a href="bootstrap.html">
+          <img src="images/Bootstrap.png" alt="Bootstrap logo" width="130" />
+        </a>
+      </section>
+    </main>
+    <footer>
+      <p>Copyrights &copy;</p>
+      <a href="#"> Scroll to top</a>
+    </footer>
+  </body>
+</html>
